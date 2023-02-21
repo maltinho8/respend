@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import Content from './RightNavigationBarContent';
+import React from "react";
+import styled from "styled-components";
+import Content from "./RightNavigationBarContent";
 
 const Ul = styled.div`
   @media (max-width: 900px) {
-    width: 100vw!important;
+    width: 100vw !important;
     flex-flow: column nowrap;
     background-color: white;
     background-size: cover;
@@ -18,17 +18,18 @@ const Ul = styled.div`
     align-items: center;
     transition: transform 0.3s ease-in-out;
     z-index: 20;
+    color: black;
   }
 `;
 
-const RightNav = ({closeMenu}) => {
+const RightNav = ({ closeMenu }) => {
   /* Nutzung der Methode closeMenu durch Übergabe in burger.js  */
   return (
     <Ul>
-      < Content closeMenu={closeMenu}/>   
-      {/* Übergabe der Methode closeMenu zur Komponente Content  */}   
+      <Content closeMenu={closeMenu} />
+      {/* Übergabe der Methode closeMenu zur Komponente Content  */}
     </Ul>
-  )
-}
+  );
+};
 
 export default RightNav;

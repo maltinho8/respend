@@ -42,12 +42,14 @@ const NavBar = () => {
   return (
     <>
       <Nav>
-        <NavLink to="/#">WORK</NavLink>
+        <NavLink to="/#">Was macht ReSpend?</NavLink>
         <Burger />
         <NavMenu>
-          <NavLink to="/LandingPage"><b>AL-OBAIDI</b>&nbsp;DESIGN</NavLink>
+          <NavLink to="/LandingPage">
+            <b>RESPEND</b>
+          </NavLink>
         </NavMenu>
-        <NavLink to="/#">CONTACT</NavLink>
+        <NavLink to="/#">Kontakt</NavLink>
       </Nav>
     </>
   );

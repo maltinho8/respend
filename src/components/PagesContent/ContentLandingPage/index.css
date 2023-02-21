@@ -1,7 +1,219 @@
+ @media only screen and (max-width: 768px) {
+   .child2 {
+    display: none !important;
+   }
+
+ }
 .App {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: 1200px;
+}
+
+.parent {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.child2 {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  width: 325px;
+  height: 525px;
+  text-align: left;
+  background-image: url("../../../assets/img/mainpage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 350px 355px;
+  border-radius: 30px;
+ 
+ 
+}
+
+.parentList {
+  text-align: center;
+}
+
+.parentListImpact {
+  text-align: center;
+}
+
+
+
+.childList2 {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  width: 125px;
+  height: 125px;
+  text-align: left;
+  background-image: url("../../../assets/img/drink.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  border-radius: 30px;
+
+}
+
+.child2List2 {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  width: 125px;
+  height: 125px;
+  text-align: left;
+  background-image: url("../../../assets/img/drink.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  border-radius: 30px;
+  margin-right: 150px;
+}
+
+.child2List2Impact {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  width: 125px;
+  height: 125px;
+  text-align: left;
+  background-image: url("../../../assets/img/money.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  border-radius: 30px;
+  margin-right: 150px;
+}
+
+.card {
+  position: relative;
+  width: 80%;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.card .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card .circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #8ed39980;
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.card:hover .circle::before {
+  background: #8ed39980;
+  clip-path: circle(80% at center);
+}
+
+.card img {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  pointer-events: none;
+  transition: 0.5s;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.card:hover img {
+  left: 78%;
+  height: 180px;
+}
+
+.card .content {
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card:hover .content {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .content h2 {
+  
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 5px;
+}
+
+.card .content h3 {
+  
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card .content p {
+ 
+}
+
+.card .content a {
+  position: relative;
+ 
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: transparent;
+  color: #111;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px 22px;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  background-color: darkorange;
+}
+
+button:hover {
+  transition: all 0.2s ease-in-out;
+  border: 1px solid darkorange;
+  opacity: 1;
+  background-color: #f2ecd4;
+  color: darkorange;
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.24;
 }
