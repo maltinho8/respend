@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Box = styled.div`
-  background-color: white;
+  background-color: #8ed39980;
   position: sticky;
-
   top: 0;
   width: 100%;
 `;
@@ -36,8 +35,9 @@ const Row2 = styled.div`
 
 const HeadingTwo = styled.p`
   font-size: 15px;
-  color: black;
-  margin-bottom: 20px;
+  color: white;
+  margin-bottom: 5px;
+  text-align: left;
   @media (max-width: 768px) {
     font-size: 16px;
   }
@@ -58,13 +58,25 @@ const Footer = () => {
         <RowContainer>
           <Row2>
             <Column>
+              <HeadingTwo style={{ color: "#0b3c4d" }}>
+                <b>App</b>
+              </HeadingTwo>
+              <HeadingTwo>Hilfe</HeadingTwo>
+              <HeadingTwo>Kontaktiere Uns</HeadingTwo>
+              <HeadingTwo>Datenschutzbestimmungen</HeadingTwo>
+              <HeadingTwo>Allgemeine Geschäftsbedingungen</HeadingTwo>
               <HeadingTwo>Impressum</HeadingTwo>
             </Column>
+
             <Column>
-              <HeadingTwo>Respend GmbH</HeadingTwo>
-            </Column>
-            <Column>
-              <HeadingTwo>Datenschutzerklärung</HeadingTwo>
+              <HeadingTwo style={{ color: "#0b3c4d" }}>
+                <b>Unternehmen</b>
+              </HeadingTwo>
+              <HeadingTwo>Partner Portal</HeadingTwo>
+              <HeadingTwo>Werde Partner</HeadingTwo>
+              <HeadingTwo>Hol dir eine kooky Box</HeadingTwo>
+              <HeadingTwo>Bring kooky in deine Stadt</HeadingTwo>
+              <HeadingTwo>Jobs</HeadingTwo>
             </Column>
           </Row2>
         </RowContainer>
