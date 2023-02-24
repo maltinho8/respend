@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Burger from "../Burger";
 import { NavLink as Link } from "react-router-dom";
@@ -31,6 +31,19 @@ const NavLink = styled(Link)`
   }
 `;
 
+const LinkedA = styled.a`
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  &.active {
+    font-weight: bold;
+  }
+`;
+
 const NavMenu = styled.div`
   display: flex;
   @media screen and (max-width: 768px) {
@@ -39,17 +52,43 @@ const NavMenu = styled.div`
 `;
 
 const NavBar = () => {
+  useEffect(() => {
+    let url = window.location.href.split("/");
+    let target = url[url.length - 1].toLowerCase();
+    let element = document.getElementById(target);
+    element && element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
   return (
     <>
       <Nav>
-        <NavLink to="/#">Was macht ReSpend?</NavLink>
+        <LinkedA
+          href="/"
+          onClick={(e) => {
+            let hero = document.getElementById("anchor1");
+            e.preventDefault();
+            hero && hero.scrollIntoView({ behavior: "smooth", block: "start" });
+            window.history.pushState("hero", "hero", "/LandingPage");
+          }}
+        >
+          Was macht Respend?
+        </LinkedA>
         <Burger />
         <NavMenu>
           <NavLink to="/LandingPage">
             <b>RESPEND</b>
           </NavLink>
         </NavMenu>
-        <NavLink to="/#">Kontakt</NavLink>
+        <LinkedA
+          href="/"
+          onClick={(e) => {
+            let hero = document.getElementById("anchor2");
+            e.preventDefault();
+            hero && hero.scrollIntoView({ behavior: "smooth", block: "start" });
+            window.history.pushState("hero", "hero", "/LandingPage");
+          }}
+        >
+          Kontakt
+        </LinkedA>
       </Nav>
     </>
   );

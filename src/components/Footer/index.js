@@ -27,12 +27,11 @@ const Column = styled.div`
 
 const Row2 = styled.div`
   display: flex;
-    grid-gap: 130px;
-    justify-content: center;
-    width: 100%;
-    margin-left: 0rem;
-    margin-top: 0rem;
-  
+  grid-gap: 130px;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0rem;
+  margin-top: 0rem;
 `;
 
 const HeadingTwo = styled.p`
@@ -62,7 +61,7 @@ const Footer = () => {
               <HeadingTwo>Impressum</HeadingTwo>
             </Column>
             <Column>
-              <HeadingTwo>al-obaidi GmbH</HeadingTwo>
+              <HeadingTwo>Respend GmbH</HeadingTwo>
             </Column>
             <Column>
               <HeadingTwo>Datenschutzerklärung</HeadingTwo>

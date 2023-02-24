@@ -1,15 +1,22 @@
- @media only screen and (max-width: 768px) {
-   .child2 {
-    display: none !important;
-   }
-
- }
 .App {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: 1200px;
+}
+
+.partner {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.partner img {
+  width: 12%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
 }
 
 .parent {
@@ -19,7 +26,7 @@
   gap: 50px;
 }
 
-.child2 {
+.imageMain {
   display: inline-block;
   padding: 1rem 1rem;
   vertical-align: middle;
@@ -31,63 +38,8 @@
   background-repeat: no-repeat;
   background-size: 350px 355px;
   border-radius: 30px;
- 
- 
-}
-
-.parentList {
-  text-align: center;
-}
-
-.parentListImpact {
-  text-align: center;
-}
 
 
-
-.childList2 {
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  width: 125px;
-  height: 125px;
-  text-align: left;
-  background-image: url("../../../assets/img/drink.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 75px 75px;
-  border-radius: 30px;
-
-}
-
-.child2List2 {
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  width: 125px;
-  height: 125px;
-  text-align: left;
-  background-image: url("../../../assets/img/drink.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 75px 75px;
-  border-radius: 30px;
-  margin-right: 150px;
-}
-
-.child2List2Impact {
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  width: 125px;
-  height: 125px;
-  text-align: left;
-  background-image: url("../../../assets/img/money.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 75px 75px;
-  border-radius: 30px;
-  margin-right: 150px;
 }
 
 .card {
@@ -176,10 +128,6 @@
   font-weight: 700;
 }
 
-.card .content p {
- 
-}
-
 .card .content a {
   position: relative;
  
@@ -197,23 +145,219 @@
 button {
   border-radius: 10px;
   padding: 10px 22px;
-  color: white;
+  color: #0b3c4d;
   border: 1px solid white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  background-color: darkorange;
+  background-color: #8ed39980;
 }
 
 button:hover {
   transition: all 0.2s ease-in-out;
-  border: 1px solid darkorange;
+  border: 1px solid #0b3c4d;
   opacity: 1;
-  background-color: #f2ecd4;
-  color: darkorange;
+  background-color: white;
+  color: #0b3c4d;
 }
 
 button:disabled {
   cursor: default;
   opacity: 0.24;
+}
+
+.wrapper {
+  
+    overflow: hidden;
+}
+
+.wrapper div {
+  min-height: 200px;
+  padding: 10px;
+ 
+}
+
+#textOne {
+  background-color: white;
+  float: left;
+  margin-right: 20px;
+  width: 540px;
+  margin-left: 50px;
+  text-align: center;
+  line-height: 20px;
+  
+  
+}
+ 
+
+#pictureOne {
+  background-color: white;
+  overflow: hidden;
+  margin-right: 50px;
+  background-image: url("../../../assets/img/drink.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  
+}
+
+#textTwo {
+  background-color: white;
+  overflow: hidden;
+  margin-right: 50px; 
+  text-align: center;
+  
+}
+
+
+#pictureTwo {
+  background-image: url("../../../assets/img/drink.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  float: left;
+  margin-left: 50px;
+  width: 540px;
+  margin-right: 20px;
+}
+
+#textThree {
+  background-color: white;
+  float: left;
+  margin-right: 20px;
+  width: 540px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+#pictureThree {
+  background-color: white;
+    overflow: hidden;
+    margin-right: 50px;
+    background-image: url("../../../assets/img/drink.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+
+}
+
+#textImpact {
+  background-color: #8ed39980;
+  overflow: hidden;
+  margin-right: 50px;
+  border-radius: 15px;
+  text-align: center;
+  
+}
+
+
+#pictureImpact {
+  background-image: url("https://media.istockphoto.com/id/1365464165/vector/sustainable-ethical-and-responsible-green-investment-coin-growing-concept-thin-line-icon.jpg?s=612x612&w=0&k=20&c=AMA2l0svZrSepR9sXL8Q8VudkByJjksGXGKymT_m_Iw=");  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125px 125px;
+  float: left;
+  margin-left: 50px;
+  width: 540px;
+  margin-right: 20px;
+}
+
+#textContact {
+  background-color: #8ed39980;
+  overflow: hidden;
+  margin-right: 50px;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+
+#pictureContact {
+  background-image: url("https://img.fcbayern.com/image/upload/t_cms-16x9/f_auto/w_1366,h_768,c_fill/cms/public/images/allianz-arena/news/becher.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px 155px;
+  border-radius: 10px;
+  float: left;
+  margin-left: 50px;
+  width: 540px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .imageMain {
+      display: none !important;
+    }
+  #textOne {
+    float: none;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto; 
+  }
+    #pictureOne {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    #textTwo {
+        margin: 0 auto;
+          width: 500px;
+          text-align: center;
+          margin: 0 auto;
+    }
+
+    #pictureTwo {
+      float: none;
+      
+        width: 500px;
+        text-align: center;
+        margin: 0 auto;
+    }
+            #textThree {
+      
+              float: none;
+      
+              width: 500px;
+              text-align: center;
+              margin: 0 auto;
+      
+      
+      
+            }
+      
+            #pictureThree {
+      
+              margin: 0 auto;
+              width: 500px;
+              text-align: center;
+              margin: 0 auto;
+      
+            }
+
+                            #textImpact {
+                              margin: 0 auto;
+                              width: 500px;
+                              text-align: center;
+                              margin: 0 auto;
+                            }
+              
+                            #pictureImpact {
+                              float: none;
+              
+                              width: 500px;
+                              text-align: center;
+                              margin: 0 auto;
+                            }
+
+                                                         #textContact {
+                                                           margin: 0 auto;
+                                                           width: 500px;
+                                                           text-align: center;
+                                                           margin: 0 auto;
+                                                         }
+                            
+                                                         #pictureContact {
+                                                           display: none;
+                                                         }
 }

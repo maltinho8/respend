@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./index.css";
-import ImageList from "../../ImageList";
 import MainPageImage from "../../../assets/img/mainpage.png";
-import Numbers from "./numbers";
 
 const Container = styled.div``;
 
@@ -71,56 +69,6 @@ const ChildOne = styled.div`
   }
 `;
 
-const ChildOneList = styled.div`
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  width: 325px;
-  height: 125px;
-  text-align: left;
-  margin-right: 180px;
-  @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
-    text-align: center;
-    margin-right: 0px;
-  }
-`;
-
-const ChildOneList2 = styled.div`
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  width: 325px;
-  height: 125px;
-  text-align: left;
-
-  @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
-    text-align: center;
-    margin-right: 0px;
-  }
-`;
-
-const ChildOneList2Impact = styled.div`
-  display: inline-block;
-  padding: 1rem 1rem;
-  vertical-align: middle;
-  width: 425px;
-  height: 125px;
-  text-align: left;
-
-  @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
-    text-align: center;
-    margin-right: 0px;
-  }
-`;
-
-const ChildTwo = styled.div`
-  width: 100vw;
-  background-color: white;
-`;
-
 const ContentContainer = styled.div`
   margin-left: 15rem;
   margin-right: 15rem;
@@ -147,44 +95,9 @@ const ContentContainerFull = styled.div`
   }
 `;
 
-const Boxes = styled.div`
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: 0px 12px 18px -6px rgba (0, 0, 0, 0.3);
-  border-radius: 10px 10px 10px 10px;
-  object-fit: contain;
-`;
-
-const Background = styled.div`
-  background-image: url("https://www.daviderizzoarchitects.com/dynamic-images?src=https://www.daviderizzoarchitects.com/app/uploads/2021/04/1-LA-B-001-Kopie.jpg&w=1600&h=0&crop=default&token=k?B2a3QNPRZjg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 80vh;
-  position: relative;
-`;
-
 const ContentLandingPage = () => {
   return (
     <Container>
-      {/*
-      <Background></Background>
-      <BackgroundContainer>
-        <ContentContainer>
-          <Boxes>
-            <Text>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </Text>
-          </Boxes>
-        </ContentContainer>
-      </BackgroundContainer>
-  */}
       <BackgroundContainer>
         <div className="parent">
           <ChildOne>
@@ -202,15 +115,17 @@ const ContentLandingPage = () => {
               und Pfandrückgabesystem.
             </p>
           </ChildOne>
-          <div className="child2"></div>
+          <div className="imageMain"></div>
         </div>
       </BackgroundContainer>
-
+      <br />
+      <br />
       <ContentContainerFull
         style={{
           backgroundColor: "#8ed39980",
           width: "100vw",
-          padding: "0.5rem",
+          paddingTop: "4rem",
+          paddingBottom: "4rem",
         }}
       >
         <TextDIV style={{ textAlign: "center" }}>
@@ -225,6 +140,8 @@ const ContentLandingPage = () => {
         <Text style={{ textAlign: "center" }}>600.000 Becher pro Stunde</Text>
         <Text style={{ textAlign: "center" }}>16.000.000 Becher pro Tag</Text>
       </ContentContainerFull>
+      <br />
+      <br />
       <ContentContainer>
         <TextDIV style={{ textAlign: "center" }}>
           Die Welt verbessern ohne Investitionskosten!
@@ -246,8 +163,8 @@ const ContentLandingPage = () => {
           <div className="circle"></div>
           <div className="content">
             <TextDIVCircle>90.000+ zurückgegebene Becher</TextDIVCircle>
-            <TextDIVCircle>XXX eingesammelte Becher </TextDIVCircle>
-            <TextDIVCircle>XXX unterstützte Organisationen </TextDIVCircle>
+            <TextDIVCircle>45.000+ eingesammelte Becher </TextDIVCircle>
+            <TextDIVCircle>145 unterstützte Organisationen </TextDIVCircle>
           </div>
           <img src={MainPageImage} alt=""></img>
         </div>
@@ -257,62 +174,73 @@ const ContentLandingPage = () => {
       <TextDIV style={{ textAlign: "center" }}>
         Alles so wie immer. Nur besser.
       </TextDIV>
-      <BackgroundContainer>
-        <div className="parentList">
-          <ChildOneList>
+      <br />
+      <br />
+      <br />
+      <BackgroundContainer id="anchor1">
+        <div className="wrapper">
+          <div id="textOne">
+            <br />
             <p style={{ fontSize: "0.8rem" }}>1. Getränk kaufen</p>
             <TextDIVGreenList style={{ whiteSpace: "pre-line" }}>
               Wie immer: Besucher*innen holen sich ein Getränk
             </TextDIVGreenList>
-          </ChildOneList>
-          <div className="childList2"></div>
+            <p style={{ fontSize: "0.8rem" }}>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua.
+            </p>
+          </div>
+          <div id="pictureOne"></div>
         </div>
       </BackgroundContainer>
-      <br />
-      <br />
-      <br />
       <BackgroundContainer>
-        <div className="parentList">
-          <div className="child2List2"></div>
-          <ChildOneList2>
+        <div className="wrapper">
+          <div id="pictureTwo"></div>
+          <div id="textTwo">
+            <br />
             <p style={{ fontSize: "0.8rem" }}>2. Genießen</p>
             <TextDIVGreenList style={{ whiteSpace: "pre-line" }}>
               Wie immer: Veranstaltung genießen mit einem Getränk
             </TextDIVGreenList>
-          </ChildOneList2>
+            <p style={{ fontSize: "0.8rem" }}>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua.
+            </p>
+          </div>
         </div>
       </BackgroundContainer>
-      <br />
-      <br />
-      <br />
       <BackgroundContainer>
-        <div className="parentList">
-          <ChildOneList>
-            <p style={{ fontSize: "0.8rem" }}>3. Aber besser:</p>
+        <div className="wrapper">
+          <div id="textThree">
+            <br />
+            <p style={{ fontSize: "0.8rem" }}>3. Aber besser</p>
             <TextDIVGreenList style={{ whiteSpace: "pre-line" }}>
               Mit wenig Aufwand Gutes tun!
             </TextDIVGreenList>
             <p style={{ fontSize: "0.8rem" }}>
-              Besucher*innen bringen Ihren Becher zurück zu einem Aufsteller von
-              Respend, sparen Zeit und spenden den Pfand für einen guten Zweck!
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua.
             </p>
-          </ChildOneList>
-          <div className="childList2"></div>
+          </div>
+          <div id="pictureThree"></div>
         </div>
       </BackgroundContainer>
+
       <br />
       <br />
       <br />
-      <ContentContainerFull
-        style={{
-          backgroundColor: "#8ed39980",
-          width: "100vw",
-          padding: "2.5rem",
-        }}
-      >
-        <div className="parentListImpact">
-          <div className="child2List2Impact"></div>
-          <ChildOneList2Impact>
+      <br />
+      <br />
+      <br />
+
+      <BackgroundContainer>
+        <div className="wrapper">
+          <div id="pictureImpact"></div>
+          <div id="textImpact">
+            <br />
             <p style={{ fontSize: "0.8rem" }}>
               Mit jedem Becher in den Aufstellern von Respend tust du etwas
               Gutes.
@@ -324,16 +252,97 @@ const ContentLandingPage = () => {
               Genieß deine Veranstaltung mit weniger Zeit in den Schlangen und
               nutze deinen Becher für eine große Wirkung.
             </p>
-          </ChildOneList2Impact>
+          </div>
         </div>
-      </ContentContainerFull>
+      </BackgroundContainer>
 
-      {/*
-
-      <div id="yourAnchorTag">
-        <ImageList />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <TextDIV style={{ textAlign: "center" }}>
+        Für jede Veranstaltung das passende Konzept
+      </TextDIV>
+      <Text style={{ textAlign: "center" }}>
+        Wir bieten für jede Veranstaltung das passende Rückgabesystem. Mit
+        verschiedenen Aufstellervarianten sorgt RESPEND für ihren individuellen
+        Bechertypen die Lösung.
+      </Text>
+      <br />
+      <br />
+      <div className="partner">
+        <img src={MainPageImage} alt="1"></img>
+        <img src={MainPageImage} alt="2"></img>
+        <img src={MainPageImage} alt="3"></img>
       </div>
-*/}
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <BackgroundContainer id="anchor2">
+        <div className="wrapper">
+          <div id="pictureContact"></div>
+          <div id="textContact">
+            <br />
+
+            <TextDIVGreenList style={{ whiteSpace: "pre-line" }}>
+              RESPEND? Das brauchen wir!
+            </TextDIVGreenList>
+            <p style={{ fontSize: "0.8rem" }}>
+              Sie haben eine Veranstaltung, die mit RESPEND ausgestattet werden
+              soll? Werden Sie Teil des Wandels mithilfe des nachhaltigen
+              Rückgabesystems von RESPEND.
+            </p>
+
+            <button
+              onClick={() =>
+                (window.location = "mailto:max.mustermann@berlin.com")
+              }
+            >
+              Kontaktieren Sie uns!
+            </button>
+          </div>
+        </div>
+      </BackgroundContainer>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <TextDIV style={{ textAlign: "center" }}>
+        Diese Unternehmen vertrauen bereits auf uns:
+      </TextDIV>
+      <br />
+      <br />
+      <div className="partner">
+        <img
+          src="https://cdn.prod.www.spiegel.de/images/0b15a7e0-0001-0004-0000-000001095938_w920_r1_fpx50_fpy50.jpg"
+          alt="1"
+        ></img>
+        <img
+          src="https://img.fcbayern.com/image/upload/q_auto,f_auto/cms/public/images/fcbayern-com/logos/bundesliga/480px-logo_fc_bayern_munchen.svg.png"
+          alt="2"
+        ></img>
+        <img
+          src="https://sportbild.bild.de/fotos/mobil-buli-vereinskacheln-leipzig-46828330/Bild/3.sport.jpg"
+          alt="3"
+        ></img>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhjUbd-sf9_LjMKEOuipqcYA5MhNbNgymm-w&usqp=CAU"
+          alt="4"
+        ></img>
+        <img
+          src="https://cdn.prod.www.spiegel.de/images/baf72d61-0001-0004-0000-000001095956_w920_r1_fpx50_fpy50.jpg"
+          alt="5"
+        ></img>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
     </Container>
   );
 };
