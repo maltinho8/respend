@@ -9,7 +9,9 @@
 .partner {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 60px;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 
 .partner img {
@@ -33,10 +35,10 @@
   width: 325px;
   height: 525px;
   text-align: left;
-  background-image: url("../../../assets/img/mainpage.png");
+  background-image: url("../../../assets/img/pictureFirst.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 350px 355px;
+  background-size: 370px 375px;
   border-radius: 30px;
 
 
@@ -146,7 +148,7 @@ button {
   border-radius: 10px;
   padding: 10px 22px;
   color: #0b3c4d;
-  border: 1px solid white;
+  border: 2px solid white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -155,7 +157,7 @@ button {
 
 button:hover {
   transition: all 0.2s ease-in-out;
-  border: 1px solid #0b3c4d;
+  border: 2px solid #0b3c4d;
   opacity: 1;
   background-color: white;
   color: #0b3c4d;
@@ -177,6 +179,18 @@ button:disabled {
  
 }
 
+.wrapperTwo {
+
+  overflow: hidden;
+}
+
+.wrapperTwo div {
+  min-height: 200px;
+  padding: 10px;
+
+}
+
+
 #textOne {
   background-color: white;
   float: left;
@@ -194,10 +208,10 @@ button:disabled {
   background-color: white;
   overflow: hidden;
   margin-right: 50px;
-  background-image: url("../../../assets/img/drink.png");
+  background-image: url("../../../assets/img/pictureFirst.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 75px 75px;
+  background-size: 230px 200px;
   
 }
 
@@ -211,10 +225,10 @@ button:disabled {
 
 
 #pictureTwo {
-  background-image: url("../../../assets/img/drink.png");
+  background-image: url("../../../assets/img/pictureSecond.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 75px 75px;
+  background-size: 230px 200px;
   float: left;
   margin-left: 50px;
   width: 540px;
@@ -234,10 +248,10 @@ button:disabled {
   background-color: white;
     overflow: hidden;
     margin-right: 50px;
-    background-image: url("../../../assets/img/drink.png");
+    background-image: url("../../../assets/img/pictureThird.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 75px 75px;
+    background-size: 230px 200px;
 
 }
 
@@ -263,24 +277,11 @@ button:disabled {
 
 #textContact {
   background-color: #8ed39980;
-  overflow: hidden;
-  margin-right: 50px;
+  margin: 0 auto;
+  width: 80%;
   border-radius: 15px;
   text-align: center;
 
-}
-
-
-#pictureContact {
-  background-image: url("https://img.fcbayern.com/image/upload/t_cms-16x9/f_auto/w_1366,h_768,c_fill/cms/public/images/allianz-arena/news/becher.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 200px 155px;
-  border-radius: 10px;
-  float: left;
-  margin-left: 50px;
-  width: 540px;
-  margin-right: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -299,6 +300,19 @@ button:disabled {
     text-align: center;
     margin: 0 auto;
     }
+
+        .wrapperTwo {
+    
+          overflow: hidden;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+    
+        .wrapperTwo div {
+          min-height: 200px;
+          padding: 10px;
+    
+        }
 
     #textTwo {
         margin: 0 auto;

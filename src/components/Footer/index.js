@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Box = styled.div`
-  background-color: #8ed39980;
+  background-color: white;
+  border-top: 2px solid #8ed39980;
   position: sticky;
   top: 0;
   width: 100%;
@@ -11,7 +13,7 @@ const Box = styled.div`
 const Container = styled.div`
   width: 100%;
   padding: 1rem 1rem 1rem 1rem;
-  /* background: red; */
+  margin-top: 2rem;
 `;
 
 const Column = styled.div`
@@ -24,23 +26,18 @@ const Column = styled.div`
   }
 `;
 
-const Row2 = styled.div`
-  display: flex;
-  grid-gap: 130px;
-  justify-content: center;
-  width: 100%;
-  margin-left: 0rem;
-  margin-top: 0rem;
+const FooterLinkReact = styled(Link)`
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
 `;
 
-const HeadingTwo = styled.p`
-  font-size: 15px;
-  color: white;
-  margin-bottom: 5px;
-  text-align: left;
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
+const Row2 = styled.div`
+  display: flex;
+  grid-gap: 50px;
+  justify-content: center;
+  width: 100%;
 `;
 
 const RowContainer = styled.div`
@@ -58,25 +55,12 @@ const Footer = () => {
         <RowContainer>
           <Row2>
             <Column>
-              <HeadingTwo style={{ color: "#0b3c4d" }}>
-                <b>App</b>
-              </HeadingTwo>
-              <HeadingTwo>Hilfe</HeadingTwo>
-              <HeadingTwo>Kontaktiere Uns</HeadingTwo>
-              <HeadingTwo>Datenschutzbestimmungen</HeadingTwo>
-              <HeadingTwo>Allgemeine Geschäftsbedingungen</HeadingTwo>
-              <HeadingTwo>Impressum</HeadingTwo>
+              <FooterLinkReact to="/LandingPage">
+                <b>RESPEND</b>
+              </FooterLinkReact>
             </Column>
-
             <Column>
-              <HeadingTwo style={{ color: "#0b3c4d" }}>
-                <b>Unternehmen</b>
-              </HeadingTwo>
-              <HeadingTwo>Partner Portal</HeadingTwo>
-              <HeadingTwo>Werde Partner</HeadingTwo>
-              <HeadingTwo>Hol dir eine kooky Box</HeadingTwo>
-              <HeadingTwo>Bring kooky in deine Stadt</HeadingTwo>
-              <HeadingTwo>Jobs</HeadingTwo>
+              <FooterLinkReact to="/Impressum">Impressum</FooterLinkReact>
             </Column>
           </Row2>
         </RowContainer>

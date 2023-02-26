@@ -9,10 +9,12 @@ import NavigationBar from "../Bar/NavigationBar/index.js";
 import LandingPage from "../Pages/LandingPage/LandingPage";
 import Impressum from "../Organisation/Imprint/Imprint.js";
 import Footer from "../Footer/index.js";
+import ScrollToTop from "../ScrollToTop/index.js";
 
 const Routing = () => {
   return (
     <Router>
+      <ScrollToTop />
       <NavigationBar />
 
       <Routes>

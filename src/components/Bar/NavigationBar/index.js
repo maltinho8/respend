@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import Burger from "../Burger";
-import { NavLink as Link } from "react-router-dom";
+import Logo from "../../../assets/img/logo.png";
 
 const Nav = styled.nav`
   background: white;
-  height: 130px;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
@@ -15,19 +15,6 @@ const Nav = styled.nav`
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0rem;
-  }
-`;
-
-const NavLink = styled(Link)`
-  color: black;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
-  &.active {
-    font-weight: bold;
   }
 `;
 
@@ -41,6 +28,9 @@ const LinkedA = styled.a`
   cursor: pointer;
   &.active {
     font-weight: bold;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -73,10 +63,19 @@ const NavBar = () => {
           Was macht Respend?
         </LinkedA>
         <Burger />
-        <NavMenu>
-          <NavLink to="/LandingPage">
+        <NavMenu to="/LandingPage">
+          <img
+            src={Logo}
+            alt="logo"
+            style={{
+              aspectRatio: "4/3",
+              objectFit: "contain",
+            }}
+          ></img>
+          {/*
+          <NavLink to="/LandingPage" style={{ fontSize: "25px" }}>
             <b>RESPEND</b>
-          </NavLink>
+          </NavLink>*/}
         </NavMenu>
         <LinkedA
           href="/"

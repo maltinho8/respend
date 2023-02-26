@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import "./index.css";
-import MainPageImage from "../../../assets/img/mainpage.png";
+import MainPageImage from "../../../assets/img/pictureThird.png";
+import Logo from "../../../assets/img/logo.png";
 
 const Container = styled.div``;
 
@@ -14,9 +15,10 @@ const Text = styled.p`
 `;
 
 const TextDIVGreen = styled.p`
-  font-size: 2.5rem;
+  font-size: 70px;
   color: #14ce87;
-  font-weight: 600;
+  font-weight: 900;
+  margin-top: 25px;
   @media screen and (max-width: 768px) {
     text-align: center;
   }
@@ -25,7 +27,16 @@ const TextDIVGreen = styled.p`
 const TextDIVGreenList = styled.p`
   font-size: 1.5rem;
   color: #14ce87;
-  font-weight: 400;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
+const TextDIVHeading = styled.p`
+  font-size: 65px;
+  font-weight: 800;
+  color: #0b3c4d;
   @media screen and (max-width: 768px) {
     text-align: center;
   }
@@ -35,6 +46,7 @@ const TextDIV = styled.p`
   font-size: 2rem;
   font-weight: 600;
   color: #0b3c4d;
+
   @media screen and (max-width: 768px) {
     text-align: center;
   }
@@ -52,15 +64,16 @@ const TextDIVCircle = styled.p`
 const BackgroundContainer = styled.div`
   width: 100vw;
   background-color: white;
+  margin-bottom: 8rem;
 `;
 
 const ChildOne = styled.div`
   display: inline-block;
-  padding: 1rem 1rem;
+
   vertical-align: middle;
   width: 550px;
   height: 550px;
-
+  margin-bottom: 40px;
   text-align: left;
   @media screen and (max-width: 768px) {
     font-size: 0.9rem;
@@ -72,7 +85,7 @@ const ChildOne = styled.div`
 const ContentContainer = styled.div`
   margin-left: 15rem;
   margin-right: 15rem;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   @media screen and (max-width: 768px) {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -88,10 +101,19 @@ const CircleContainer = styled.div`
 `;
 
 const ContentContainerFull = styled.div`
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 
   @media screen and (max-width: 768px) {
     display: block;
+  }
+`;
+
+const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0rem;
   }
 `;
 
@@ -101,25 +123,48 @@ const ContentLandingPage = () => {
       <BackgroundContainer>
         <div className="parent">
           <ChildOne>
-            <TextDIVGreen style={{ whiteSpace: "pre-line" }}>
-              {"<br/>Becher zurückgeben und Gutes tun?<br/><br/>"
-                .split("<br/>")
-                .join("\n")}
+            <TextDIVGreen style={{ marginBottom: "0" }}>
+              {"Becher zurückgeben und Gutes tun?".split("<br/>").join("\n")}
             </TextDIVGreen>
-            <TextDIV style={{ whiteSpace: "pre-line" }}>
+            <TextDIVHeading
+              style={{
+                whiteSpace: "pre-line",
+                marginTop: "0",
+                marginBottom: "0",
+              }}
+            >
               {"Dann<br/>RESPEND".split("<br/>").join("\n")}
-            </TextDIV>
-            <br />
-            <p style={{ fontSize: "0.8rem" }}>
-              <b>Respend</b> revolutioniert das Zusammenspiel aus Nachhaltigkeit
-              und Pfandrückgabesystem.
+            </TextDIVHeading>
+
+            <p style={{ fontSize: "0.8rem", marginBottom: "20px" }}>
+              <b>DANK RESPEND</b> werden Becher zum Treiber für soziales
+              Engagement. Wir wollen das Zusammenspiel aus Nachhaltigkeit und
+              Pfandrückgabesystemen auf Veranstaltungen revolutionieren.
             </p>
+            <button
+              onClick={() =>
+                (window.location = "mailto:max.mustermann@berlin.com")
+              }
+            >
+              Kontaktieren Sie uns!
+            </button>
           </ChildOne>
           <div className="imageMain"></div>
         </div>
       </BackgroundContainer>
-      <br />
-      <br />
+
+      <ContentContainer>
+        <TextDIV style={{ textAlign: "center" }}>
+          Die Welt verbessern ohne Investitionskosten!
+        </TextDIV>
+        <Text style={{ textAlign: "center" }}>
+          RESPEND stattet Ihre Veranstaltung in Zusammenarbeit mit
+          Spendenorganisationen aus.
+        </Text>
+        <Text style={{ textAlign: "center" }}>
+          <b>Keine Investitionskosten, kein Aufwand, sondern Gutes tun!</b>
+        </Text>
+      </ContentContainer>
       <ContentContainerFull
         style={{
           backgroundColor: "#8ed39980",
@@ -132,51 +177,52 @@ const ContentLandingPage = () => {
           Es ruft nach einem Wandel
         </TextDIV>
         <Text style={{ textAlign: "center" }}>
-          In Deutschland werden jedes Jahr 5.8 Milliarden Getränkebecher
-          benutzt.
+          In Deutschland werden jedes Jahr{" "}
+          <b> 5.8 Milliarden Getränkebecher </b> benutzt.
         </Text>
-        <Text style={{ textAlign: "center" }}>104 Becher pro Sekunde</Text>
-        <Text style={{ textAlign: "center" }}>11.000 Becher pro Minute</Text>
-        <Text style={{ textAlign: "center" }}>600.000 Becher pro Stunde</Text>
-        <Text style={{ textAlign: "center" }}>16.000.000 Becher pro Tag</Text>
-      </ContentContainerFull>
-      <br />
-      <br />
-      <ContentContainer>
-        <TextDIV style={{ textAlign: "center" }}>
-          Die Welt verbessern ohne Investitionskosten!
-        </TextDIV>
-        <Text style={{ textAlign: "center" }}>
-          RESPEND stattet Ihre Veranstaltung in Zusammenarbeit mit
-          Spendenorganisationen aus.
-        </Text>
-        <Text style={{ textAlign: "center" }}>
-          Keine Investitionskosten, kein Aufwand, sondern Gutes tun!
-        </Text>
-      </ContentContainer>
-      <br />
-      <TextDIV style={{ textAlign: "center" }}>
-        Der Impact von Respend bisher
-      </TextDIV>
-      <CircleContainer>
-        <div className="card">
-          <div className="circle"></div>
-          <div className="content">
-            <TextDIVCircle>90.000+ zurückgegebene Becher</TextDIVCircle>
-            <TextDIVCircle>45.000+ eingesammelte Becher </TextDIVCircle>
-            <TextDIVCircle>145 unterstützte Organisationen </TextDIVCircle>
+
+        <CircleContainer>
+          <div className="card">
+            <div className="circle"></div>
+            <div className="content">
+              <TextDIVCircle>104 Becher pro Sekunde</TextDIVCircle>
+              <TextDIVCircle style={{ marginLeft: "30px" }}>
+                11.000 Becher pro Minute{" "}
+              </TextDIVCircle>
+              <TextDIVCircle style={{ marginLeft: "60px" }}>
+                600.000 Becher pro Stunde{" "}
+              </TextDIVCircle>
+              <TextDIVCircle style={{ marginLeft: "90px" }}>
+                16.000.000 Becher pro Tag
+              </TextDIVCircle>
+            </div>
+            <img src={MainPageImage} alt=""></img>
           </div>
-          <img src={MainPageImage} alt=""></img>
+        </CircleContainer>
+      </ContentContainerFull>
+      {/*
+      <BackgroundContainer>
+        <div>
+          <div id="textContact">
+            <br />
+            <TextDIVGreenList style={{ whiteSpace: "pre-line" }}>
+              Der Impact von Respend bisher
+            </TextDIVGreenList>
+            <div
+              style={{ display: "flex", justifyContent: "center", gap: "80px" }}
+            >
+              <TextDIVGreen>90k</TextDIVGreen>
+              <TextDIVGreen>45k</TextDIVGreen>
+              <TextDIVGreen>145</TextDIVGreen>
+            </div>
+          </div>
         </div>
-      </CircleContainer>
-      <br />
-      <br />
+      </BackgroundContainer>
+      */}
       <TextDIV style={{ textAlign: "center" }}>
         Alles so wie immer. Nur besser.
       </TextDIV>
-      <br />
-      <br />
-      <br />
+
       <BackgroundContainer id="anchor1">
         <div className="wrapper">
           <div id="textOne">
@@ -195,7 +241,7 @@ const ContentLandingPage = () => {
         </div>
       </BackgroundContainer>
       <BackgroundContainer>
-        <div className="wrapper">
+        <div className="wrapperTwo">
           <div id="pictureTwo"></div>
           <div id="textTwo">
             <br />
@@ -229,13 +275,6 @@ const ContentLandingPage = () => {
         </div>
       </BackgroundContainer>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
       <BackgroundContainer>
         <div className="wrapper">
           <div id="pictureImpact"></div>
@@ -256,12 +295,6 @@ const ContentLandingPage = () => {
         </div>
       </BackgroundContainer>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <TextDIV style={{ textAlign: "center" }}>
         Für jede Veranstaltung das passende Konzept
       </TextDIV>
@@ -270,21 +303,15 @@ const ContentLandingPage = () => {
         verschiedenen Aufstellervarianten sorgt RESPEND für ihren individuellen
         Bechertypen die Lösung.
       </Text>
-      <br />
-      <br />
+
       <div className="partner">
         <img src={MainPageImage} alt="1"></img>
         <img src={MainPageImage} alt="2"></img>
         <img src={MainPageImage} alt="3"></img>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
       <BackgroundContainer id="anchor2">
         <div className="wrapper">
-          <div id="pictureContact"></div>
           <div id="textContact">
             <br />
 
@@ -302,21 +329,23 @@ const ContentLandingPage = () => {
                 (window.location = "mailto:max.mustermann@berlin.com")
               }
             >
-              Kontaktieren Sie uns!
+              Schreiben Sie uns eine Mail!
             </button>
+            <p style={{ fontSize: "0.8rem" }}>
+              oder rufen Sie uns an unter:{" "}
+              <button onClick={() => window.open("tel:0123/456789")}>
+                0123/456789
+              </button>
+            </p>
           </div>
         </div>
       </BackgroundContainer>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      {/*
+
       <TextDIV style={{ textAlign: "center" }}>
         Diese Unternehmen vertrauen bereits auf uns:
       </TextDIV>
-      <br />
-      <br />
+
       <div className="partner">
         <img
           src="https://cdn.prod.www.spiegel.de/images/0b15a7e0-0001-0004-0000-000001095938_w920_r1_fpx50_fpy50.jpg"
@@ -339,10 +368,10 @@ const ContentLandingPage = () => {
           alt="5"
         ></img>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
+            */}
+      <LogoContainer>
+        <img src={Logo} alt="logo" width={220} height={120}></img>
+      </LogoContainer>
     </Container>
   );
 };
