@@ -12,6 +12,10 @@ const Text = styled.p`
     font-size: 0.9rem;
     text-align: center;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+    text-align: center;
+  }
 `;
 
 const TextDIVGreen = styled.p`
@@ -21,6 +25,10 @@ const TextDIVGreen = styled.p`
   margin-top: 25px;
   @media screen and (max-width: 768px) {
     text-align: center;
+  }
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    font-size: 40px;
   }
 `;
 
@@ -40,16 +48,18 @@ const TextDIVHeading = styled.p`
   @media screen and (max-width: 768px) {
     text-align: center;
   }
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    font-size: 40px;
+  }
 `;
 
 const TextDIV = styled.p`
   font-size: 2rem;
   font-weight: 600;
   color: #0b3c4d;
-
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
+  margin-left: 5px;
+  margin-right: 5px;
 `;
 
 const TextDIVCircle = styled.p`
@@ -59,17 +69,23 @@ const TextDIVCircle = styled.p`
   @media screen and (max-width: 768px) {
     text-align: center;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+    text-align: center;
+  }
 `;
 
 const BackgroundContainer = styled.div`
   width: 100vw;
   background-color: white;
   margin-bottom: 8rem;
+  @media screen and (max-width: 480px) {
+    margin-bottom: 3rem;
+  }
 `;
 
 const ChildOne = styled.div`
   display: inline-block;
-
   vertical-align: middle;
   width: 550px;
   height: 550px;
@@ -79,6 +95,12 @@ const ChildOne = styled.div`
     font-size: 0.9rem;
     text-align: center;
     margin-right: 0px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-right: 0px;
+    height: 400px;
   }
 `;
 
@@ -90,6 +112,12 @@ const ContentContainer = styled.div`
     margin-left: 3rem;
     margin-right: 3rem;
     display: block;
+  }
+  @media screen and (max-width: 480px) {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: block;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -115,6 +143,20 @@ const LogoContainer = styled.div`
   @media screen and (max-width: 768px) {
     margin-bottom: 0rem;
   }
+  @media screen and (max-width: 480px) {
+    margin-bottom: 2rem;
+  }
+`;
+
+const LogoImg = styled.img`
+  width: 220px;
+  height: 120px;
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+    width: 120px;
+    height: 80px;
+  }
 `;
 
 const ContentLandingPage = () => {
@@ -136,7 +178,14 @@ const ContentLandingPage = () => {
               {"Dann<br/>RESPEND".split("<br/>").join("\n")}
             </TextDIVHeading>
 
-            <p style={{ fontSize: "0.8rem", marginBottom: "20px" }}>
+            <p
+              style={{
+                fontSize: "0.8rem",
+                marginBottom: "20px",
+                marginLeft: "15px",
+                marginRight: "15px",
+              }}
+            >
               <b>DANK RESPEND</b> werden Becher zum Treiber für soziales
               Engagement. Wir wollen das Zusammenspiel aus Nachhaltigkeit und
               Pfandrückgabesystemen auf Veranstaltungen revolutionieren.
@@ -332,8 +381,8 @@ const ContentLandingPage = () => {
               Schreiben Sie uns eine Mail!
             </button>
             <p style={{ fontSize: "0.8rem" }}>
-              oder rufen Sie uns an unter:{" "}
-              <button onClick={() => window.open("tel:0123/456789")}>
+              oder rufen Sie uns an unter &nbsp;
+              <button onClick={() => window.open("tel:01785434193")}>
                 0123/456789
               </button>
             </p>
@@ -370,7 +419,7 @@ const ContentLandingPage = () => {
       </div>
             */}
       <LogoContainer>
-        <img src={Logo} alt="logo" width={220} height={120}></img>
+        <LogoImg src={Logo} alt="logo"></LogoImg>
       </LogoContainer>
     </Container>
   );

@@ -3,12 +3,14 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Text = styled(Link)`
-  color: black;
+  color: white;
   font-size: 1rem;
+
   margin-left: 10rem;
   font-weight: 500;
   cursor: pointer;
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 768px) {
+    font-weight: 800;
     margin: 0;
     transition: ease all 0.5s;
     margin-top: 50px;
@@ -20,7 +22,7 @@ const Text = styled(Link)`
 `;
 
 const Container = styled.div`
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,33 +35,23 @@ const Content = ({ closeMenu }) => {
   return (
     <Container>
       <br />
+      <br />
+      <br />
+      <br />
       {/* durch onClick - closeMenu wird genutzt, um beim Klicken des Links das Menü zu schließen  */}
 
       <Text
         onClick={closeMenu}
-        to="/Produkte"
-        style={{ textDecoration: "none", color: "black" }}
+        to="/LandingPage"
+        style={{ textDecoration: "none" }}
       >
-        Was macht ReSpend?
+        ReSpend
       </Text>
+
       <Text
         onClick={closeMenu}
-        to="/Projekte"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        Impact
-      </Text>
-      <Text
-        onClick={closeMenu}
-        to="/Über uns"
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        Kontakt
-      </Text>
-      <Text
-        onClick={closeMenu}
-        to="/FAQ"
-        style={{ textDecoration: "none", color: "black" }}
+        to="/Impressum"
+        style={{ textDecoration: "none" }}
       >
         Impressum
       </Text>

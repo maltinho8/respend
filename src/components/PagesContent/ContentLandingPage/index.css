@@ -15,7 +15,7 @@
 }
 
 .partner img {
-  width: 12%;
+  width: 14%;
   aspect-ratio: 3/2;
   object-fit: contain;
   mix-blend-mode: color-burn;
@@ -40,8 +40,269 @@
   background-repeat: no-repeat;
   background-size: 370px 375px;
   border-radius: 30px;
+}
 
+.wrapper {
+  overflow: hidden;
+}
 
+.wrapper div {
+  min-height: 200px;
+  padding: 10px;
+}
+
+.wrapperTwo {
+  overflow: hidden;
+}
+
+.wrapperTwo div {
+  min-height: 200px;
+  padding: 10px;
+}
+
+#textOne {
+  background-color: white;
+  float: left;
+  margin-right: 20px;
+  width: 540px;
+  margin-left: 50px;
+  text-align: center;
+  line-height: 20px;
+}
+
+#pictureOne {
+  background-color: white;
+  overflow: hidden;
+  margin-right: 50px;
+  background-image: url("../../../assets/img/pictureFirst.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 230px 200px;
+}
+
+#textTwo {
+  background-color: white;
+  overflow: hidden;
+  margin-right: 50px;
+  text-align: center;
+}
+
+#pictureTwo {
+  background-image: url("../../../assets/img/pictureSecond.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 230px 200px;
+  float: left;
+  margin-left: 50px;
+  width: 540px;
+  margin-right: 20px;
+}
+
+#textThree {
+  background-color: white;
+  float: left;
+  margin-right: 20px;
+  width: 540px;
+  margin-left: 50px;
+  text-align: center;
+}
+
+#pictureThree {
+  background-color: white;
+  overflow: hidden;
+  margin-right: 50px;
+  background-image: url("../../../assets/img/pictureThird.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 230px 200px;
+}
+
+#textImpact {
+  background-color: #8ed39980;
+  overflow: hidden;
+  margin-right: 50px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#pictureImpact {
+  background-image: url("https://media.istockphoto.com/id/1365464165/vector/sustainable-ethical-and-responsible-green-investment-coin-growing-concept-thin-line-icon.jpg?s=612x612&w=0&k=20&c=AMA2l0svZrSepR9sXL8Q8VudkByJjksGXGKymT_m_Iw=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125px 125px;
+  float: left;
+  margin-left: 50px;
+  width: 540px;
+  margin-right: 20px;
+}
+
+#textContact {
+  background-color: #8ed39980;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .imageMain {
+    display: none !important;
+  }
+
+  #textOne {
+    float: none;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureOne {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .wrapperTwo {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .wrapperTwo div {
+    min-height: 200px;
+    padding: 10px;
+  }
+
+  #textTwo {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureTwo {
+    float: none;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #textThree {
+    float: none;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureThree {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #textImpact {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureImpact {
+    float: none;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #textContact {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureContact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card:hover img {
+    display: none;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  #textOne {
+    float: none;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureOne {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #textTwo {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureTwo {
+    float: none;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #textThree {
+    float: none;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureThree {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #textImpact {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureImpact {
+    float: none;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #textContact {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #pictureContact {
+    display: none;
+  }
 }
 
 .card {
@@ -65,7 +326,7 @@
 }
 
 .card .circle::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -115,7 +376,6 @@
 }
 
 .card .content h2 {
-  
   text-transform: uppercase;
   font-size: 2em;
   line-height: 1em;
@@ -123,7 +383,6 @@
 }
 
 .card .content h3 {
-  
   text-transform: uppercase;
   font-size: 1em;
   margin-bottom: 10px;
@@ -132,7 +391,7 @@
 
 .card .content a {
   position: relative;
- 
+
   padding: 10px 20px;
   border-radius: 10px;
   background: transparent;
@@ -166,212 +425,4 @@ button:hover {
 button:disabled {
   cursor: default;
   opacity: 0.24;
-}
-
-.wrapper {
-  
-    overflow: hidden;
-}
-
-.wrapper div {
-  min-height: 200px;
-  padding: 10px;
- 
-}
-
-.wrapperTwo {
-
-  overflow: hidden;
-}
-
-.wrapperTwo div {
-  min-height: 200px;
-  padding: 10px;
-
-}
-
-
-#textOne {
-  background-color: white;
-  float: left;
-  margin-right: 20px;
-  width: 540px;
-  margin-left: 50px;
-  text-align: center;
-  line-height: 20px;
-  
-  
-}
- 
-
-#pictureOne {
-  background-color: white;
-  overflow: hidden;
-  margin-right: 50px;
-  background-image: url("../../../assets/img/pictureFirst.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 230px 200px;
-  
-}
-
-#textTwo {
-  background-color: white;
-  overflow: hidden;
-  margin-right: 50px; 
-  text-align: center;
-  
-}
-
-
-#pictureTwo {
-  background-image: url("../../../assets/img/pictureSecond.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 230px 200px;
-  float: left;
-  margin-left: 50px;
-  width: 540px;
-  margin-right: 20px;
-}
-
-#textThree {
-  background-color: white;
-  float: left;
-  margin-right: 20px;
-  width: 540px;
-  margin-left: 50px;
-  text-align: center;
-}
-
-#pictureThree {
-  background-color: white;
-    overflow: hidden;
-    margin-right: 50px;
-    background-image: url("../../../assets/img/pictureThird.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 230px 200px;
-
-}
-
-#textImpact {
-  background-color: #8ed39980;
-  overflow: hidden;
-  margin-right: 50px;
-  border-radius: 15px;
-  text-align: center;
-  
-}
-
-
-#pictureImpact {
-  background-image: url("https://media.istockphoto.com/id/1365464165/vector/sustainable-ethical-and-responsible-green-investment-coin-growing-concept-thin-line-icon.jpg?s=612x612&w=0&k=20&c=AMA2l0svZrSepR9sXL8Q8VudkByJjksGXGKymT_m_Iw=");  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 125px 125px;
-  float: left;
-  margin-left: 50px;
-  width: 540px;
-  margin-right: 20px;
-}
-
-#textContact {
-  background-color: #8ed39980;
-  margin: 0 auto;
-  width: 80%;
-  border-radius: 15px;
-  text-align: center;
-
-}
-
-@media screen and (max-width: 768px) {
-  .imageMain {
-      display: none !important;
-    }
-  #textOne {
-    float: none;
-    width: 500px;
-    text-align: center;
-    margin: 0 auto; 
-  }
-    #pictureOne {
-    margin: 0 auto;
-    width: 500px;
-    text-align: center;
-    margin: 0 auto;
-    }
-
-        .wrapperTwo {
-    
-          overflow: hidden;
-          display: flex;
-          flex-direction: column-reverse;
-        }
-    
-        .wrapperTwo div {
-          min-height: 200px;
-          padding: 10px;
-    
-        }
-
-    #textTwo {
-        margin: 0 auto;
-          width: 500px;
-          text-align: center;
-          margin: 0 auto;
-    }
-
-    #pictureTwo {
-      float: none;
-      
-        width: 500px;
-        text-align: center;
-        margin: 0 auto;
-    }
-            #textThree {
-      
-              float: none;
-      
-              width: 500px;
-              text-align: center;
-              margin: 0 auto;
-      
-      
-      
-            }
-      
-            #pictureThree {
-      
-              margin: 0 auto;
-              width: 500px;
-              text-align: center;
-              margin: 0 auto;
-      
-            }
-
-                            #textImpact {
-                              margin: 0 auto;
-                              width: 500px;
-                              text-align: center;
-                              margin: 0 auto;
-                            }
-              
-                            #pictureImpact {
-                              float: none;
-              
-                              width: 500px;
-                              text-align: center;
-                              margin: 0 auto;
-                            }
-
-                                                         #textContact {
-                                                           margin: 0 auto;
-                                                           width: 500px;
-                                                           text-align: center;
-                                                           margin: 0 auto;
-                                                         }
-                            
-                                                         #pictureContact {
-                                                           display: none;
-                                                         }
 }

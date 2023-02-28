@@ -3,10 +3,10 @@ import styled from "styled-components";
 import Content from "./RightNavigationBarContent";
 
 const Ul = styled.div`
-  @media (max-width: 900px) {
+  @media (max-width: 768px) {
     width: 100vw !important;
     flex-flow: column nowrap;
-    background-color: white;
+    background-color: #14ce87;
     background-size: cover;
     background-position: center;
     position: fixed;
